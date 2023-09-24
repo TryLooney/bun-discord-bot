@@ -11,12 +11,23 @@
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
+    "paths": {
+      "@/*":["./src/*"],
+      "@discord/*":["./src/discord/*"],
+      "@functions/*":["./src/functions/*"],
+      "@settings/*":["./src/settings/*"]
+    },
     "types": [
       "bun-types" // add Bun global
-    ]
-  }
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/settings/settings.json"
+  ]
 }

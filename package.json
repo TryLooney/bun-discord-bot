@@ -2,10 +2,24 @@
   "name": "bun-discord-bot",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts"
+  },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/signale": "^1.4.4",
+    "bun-types": "latest",
+    "sucrase": "^3.34.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@magicyan/discord": "^1.0.3",
+    "chalk": "^5.3.0",
+    "discord.js": "^14.13.0",
+    "eslint": "^8.50.0",
+    "glob": "^10.3.6",
+    "signale": "^1.4.0"
   }
 }
